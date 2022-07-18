@@ -27,6 +27,7 @@ namespace local_smartupdater;
 
 defined('MOODLE_INTERNAL') || die();
 
+
 /**
  * Event observer class.
  *
@@ -46,6 +47,16 @@ class observer {
 
         // For more information about the Events API, please visit:
         // https://docs.moodle.org/dev/Event_2
+
+        global $DB, $USER;
+
+        // Setup: Initialise Variables.
+        $data                = $event->get_data();
+        $enroleduserid       = $data['relateduserid'];
+        $affecteduser        = current($DB->get_records('user', array('id' => $enroleduserid)));
+        $affecteduser->msn   = "You've been updated!";
+
+        \user_update_user($affecteduser);
 
         return true;
     }
