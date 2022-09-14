@@ -6,7 +6,7 @@ TODO Provide more detailed description here.
 
 ## License ##
 
-2022 Brad Pasley <bradpaslery@gmail.com>
+2022 Brad Pasley <bradpasley@duck.com>
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
