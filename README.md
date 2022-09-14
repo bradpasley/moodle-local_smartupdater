@@ -1,9 +1,6 @@
 # Smart Updater #
 
-TODO Describe the plugin shortly here.
-
-TODO Provide more detailed description here.
-
+This is a boiler plate codebase to build a Moodle event trigger plugin.
 ## License ##
 
 2022 Brad Pasley <bradpasley@duck.com>
